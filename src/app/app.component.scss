@@ -1,0 +1,112 @@
+.header {
+    margin-top: 50px;
+    height: 70px;
+    background-color: #348CDF;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .task {
+        height: 70px;
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #E5E5E5;
+        border-radius: 5px;
+        background-color: #FAFAFA;
+        .group-1  {
+            width: 85%;
+            .box {
+                color: #585858;
+                cursor: pointer;
+                margin-right: 1%;
+            }
+        }
+        .group-2 {
+            display: flex;
+            justify-content: flex-end;
+            width: 15%;
+            .edit {
+                display: block;
+                border-radius: 50%;
+                width: 2.2rem;
+                height: 2.2rem;
+                line-height: 2.2rem;
+                color: #585858;
+                text-align: center;
+                cursor: pointer;
+                transition: all 0.2s;
+                &:hover {
+                    background-color: #E5E5E5;
+                }
+            }
+            .delete {
+                display: block;
+                border-radius: 50%;
+                width: 2.2rem;
+                height: 2.2rem;
+                line-height: 2.2rem;
+                text-align: center;
+                color: #585858;
+                cursor: pointer;
+                transition: all 0.2s;
+                margin-left: 0.5rem;
+                &:hover {
+                    background-color: #E5E5E5;
+                }
+            }
+        }
+    }
+}
+
+.add-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5rem;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    .new-task {
+        width: 75%;
+        height: 2.5rem;
+        border-radius: 5px;
+        border: 1px solid #E5E5E5;
+        padding-left: 0.3rem;
+    }
+    .add-new-task {
+        width: 20%;
+        height: 2.5rem;
+        background-color: #FAFAFA;
+        border: none;
+        cursor: pointer;
+        //transition: 0.2s;
+        &:hover {
+            border: 1px solid #E5E5E5;
+            border-radius: 5px;
+        }
+    }
+}
+
+.completed {
+    color: #E5E5E5;
+    text-decoration: line-through;
+}
+
+.box-checked {
+    color: #E5E5E5;
+    cursor: pointer;
+    margin-right: 1%;
+}
